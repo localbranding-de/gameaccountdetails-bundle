@@ -1,0 +1,29 @@
+/* LocalBranding css file */
+
+
+.tl_modulewizard {
+	max-width:100%;
+}
+
+.price .tl_text, 
+.quantity .tl_text, 
+.endPrice .tl_text {
+	text-align:right;
+}
+
+.tl_text_left {
+	text-align:left;
+}
+
+
+.accordHeader {
+	vertical-align:top;
+}
+
+
+/*
+.accordHeader input {
+	min-height: 60px;
+}
+*/
+

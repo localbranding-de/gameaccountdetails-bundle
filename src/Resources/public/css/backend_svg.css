@@ -1,0 +1,8 @@
+#tl_navigation .tl_level_1_group .group-lb_branding {
+    background: url(../icons/lb-branding.svg) 3px 2px no-repeat;
+    background-size: 16px;
+}
+#tl_navigation .tl_level_1_group .group-calendar_booking {
+    background: url(../icons/location.svg) left center no-repeat;
+    background-size: 16px;
+}
