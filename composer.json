@@ -1,6 +1,7 @@
 {
 	"name" : "localbranding-de/gameAccountDetails-bundle",
 	"type" : "contao-bundle",
+	"verison": "1.0.2",
 	"description" : "Hello World extension for Contao Open Source CMS",
 	"license" : "LGPL-3.0-or-later",
 	"authors" : [{
