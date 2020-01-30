@@ -3,7 +3,7 @@
 /**
  * Hooks.
  */
-$GLOBALS['MERCONIS_HOOKS']['afterCheckout'][] = array(\LocalbrandingDe\ExtendedProductDetailBundle\Classes\AccountMail::class, 'AccountMail');
+$GLOBALS['MERCONIS_HOOKS']['afterCheckout'][] = array(\LocalbrandingDe\gameAccountDetailsBundle\Classes\AccountMail::class, 'AccountMail');
 
 
 array_insert($GLOBALS['BE_MOD'], 1,
