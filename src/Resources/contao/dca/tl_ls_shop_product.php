@@ -13,4 +13,4 @@ $GLOBALS['TL_DCA']['tl_ls_shop_product']['fields']['lb_productIsGameAccount'] = 
     'label'     => &$GLOBALS['TL_LANG']['tl_ls_shop_product']['lb_productIsGameAccount'],
     'inputType' => 'checkbox',
     'sql'                     => "char(1) NOT NULL default ''"
-);
+); 

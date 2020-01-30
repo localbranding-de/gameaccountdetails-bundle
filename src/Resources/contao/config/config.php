@@ -3,6 +3,19 @@
 /**
  * Hooks.
  */
-$GLOBALS['TL_HOOKS']['outputBackendTemplate'][] = array('LocalbrandingDe\GameAccountDetailsBundle\honischClass', 'myOutputBackendTemplate');
-// Frontend modules
-$GLOBALS['FE_MOD']['miscellaneous']['helloWorld'] = 'LocalbrandingDe\GameAccountDetailsBundle\Classes\HelloWorldModule';
+$GLOBALS['MERCONIS_HOOKS']['afterCheckout'][] = array(\LocalbrandingDe\ExtendedProductDetailBundle\Classes\AccountMail::class, 'AccountMail');
+
+
+array_insert($GLOBALS['BE_MOD'], 1,
+    array(
+        
+        'GameAccounts' => array
+        (
+            'gameAccountDetails' => array
+            (
+                'tables'        => array('tl_lb_gameAccountDetails')
+            )
+        )
+    )
+    )
+    ;
