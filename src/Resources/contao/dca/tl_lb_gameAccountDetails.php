@@ -1,11 +1,11 @@
 <?php
 /**
- * Table tl_lb_gameAccountDetail
+ * Table tl_lb_gameAccountDetails
  */
 
 
 
-$GLOBALS['TL_DCA']['tl_lb_gameAccountDetail'] = array
+$GLOBALS['TL_DCA']['tl_lb_gameAccountDetails'] = array
 (
     
     // Config
@@ -38,7 +38,7 @@ $GLOBALS['TL_DCA']['tl_lb_gameAccountDetail'] = array
         ),
         'username' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['username'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['username'],
             'exclude'                 => true,
             'search'                  => true,
             'sorting'                 => true,
@@ -49,14 +49,14 @@ $GLOBALS['TL_DCA']['tl_lb_gameAccountDetail'] = array
         ),
         'usernameLabel' => array
         (
-            'label'     => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['usernameLabel'],
+            'label'     => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['usernameLabel'],
             'inputType' => 'text',
             'eval'      => array('tl_class'=>'w50'),
             'sql'       => "varchar(256) NOT NULL default ''"
         ),
         'shop_product' => array
         (
-            'label'     => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['shop_product'],
+            'label'     => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['shop_product'],
             'exclude'   => true,
             'inputType' => 'select',
             'eval'      => array('submitOnChange'=>true,'feEditable'=>true, 'feViewable'=>true),
@@ -83,20 +83,20 @@ $GLOBALS['TL_DCA']['tl_lb_gameAccountDetail'] = array
         ),
         'optionalSecurity' => array
         (
-            'label'     => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['optionalSecurity'],
+            'label'     => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['optionalSecurity'],
             'inputType' => 'text',
             'eval'      => array('tl_class'=>'clr'),
             'sql'       => "varchar(256) NOT NULL default ''"
         ),
         'securityQuestion' => array
         (
-            'label'     => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['securityQuestion'],
+            'label'     => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['securityQuestion'],
             'inputType' => 'text',
             'sql'       => "varchar(256) NOT NULL default ''"
         ),
         'securityQuestionAnswer' => array
         (
-            'label'     => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['securityQuestionAnswer'],
+            'label'     => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['securityQuestionAnswer'],
             'inputType' => 'text',
             'sql'       => "varchar(255) NOT NULL default ''"
         ),
@@ -124,7 +124,7 @@ $GLOBALS['TL_DCA']['tl_lb_gameAccountDetail'] = array
         ),
         'dateOfBirth' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['dateOfBirth'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['dateOfBirth'],
             'exclude'                 => true,
             'inputType'               => 'text',
             'eval'                    => array('rgxp'=>'date', 'datepicker'=>true, 'feEditable'=>true, 'feViewable'=>true, 'tl_class'=>'w50 wizard'),
@@ -132,7 +132,7 @@ $GLOBALS['TL_DCA']['tl_lb_gameAccountDetail'] = array
         ),
         'country' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['country'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['country'],
             'exclude'                 => true,
             'filter'                  => true,
             'sorting'                 => true,
@@ -147,7 +147,7 @@ $GLOBALS['TL_DCA']['tl_lb_gameAccountDetail'] = array
     
     'sold' => array
     (
-        'label'     => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['dateOfBirth'],
+        'label'     => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['dateOfBirth'],
         'inputType' => 'checkbox',
         'eval'      => array('tl_class'=>'clr'),
         'sql'                     => "char(1) NOT NULL default ''"
@@ -165,28 +165,28 @@ $GLOBALS['TL_DCA']['tl_lb_gameAccountDetail'] = array
     ),
     'cid' => array
     (
-        'label'              => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['lb_cid'],
+        'label'              => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['lb_cid'],
         'sql'                => "varchar(64) COLLATE utf8_bin NULL",
         'eval'               => array('feEditable'=>true, 'feViewable'=>true),
         'inputType'          => 'text'
     ),
     'cdate' => array
     (
-        'label'              => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['lb_cdate'],
+        'label'              => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['lb_cdate'],
         'sql'                => "int(10) unsigned NOT NULL default '0'",
         'eval'               => array('feEditable'=>true, 'feViewable'=>true),
         'inputType'          => 'text'
     ),
     'uid' => array
     (
-        'label'              => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['lb_uid'],
+        'label'              => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['lb_uid'],
         'sql'                => "varchar(64) COLLATE utf8_bin NULL",
         'eval'               => array('feEditable'=>true, 'feViewable'=>true),
         'inputType'          => 'text'
     ),
     'udate' => array
     (
-        'label'              => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['lb_udate'],
+        'label'              => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['lb_udate'],
         'sql'                => "int(10) unsigned NOT NULL default '0'",
         'eval'               => array('feEditable'=>true, 'feViewable'=>true),
         'inputType'          => 'text'
@@ -214,7 +214,7 @@ $GLOBALS['TL_DCA']['tl_lb_gameAccountDetail'] = array
     (
         'edit' => array
         (
-            'label'               => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetail']['edit'],
+            'label'               => &$GLOBALS['TL_LANG']['tl_lb_gameAccountDetails']['edit'],
             'href'                => 'act=edit',
             'icon'                => 'edit.svg'
         ),
